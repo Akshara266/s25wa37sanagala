@@ -21,7 +21,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-const computationRouter = require('./routes/computation');
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/mydata', mydataRouter);
